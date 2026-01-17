@@ -1,8 +1,9 @@
-Culinary Competition Explorer (Chefbase)
+# Culinary Competition Explorer (Chefbase)
 
 An interactive web application for exploring chefs, restaurants, and competition history from popular culinary shows like Culinary Class Wars and Iron Chef.
 
-Features
+## Features
+
 * Chef Profiles: Detailed bios, competition ranks, and "Spoon" classifications.
 * Restaurant Integration: Interactive maps using Leaflet.js and direct booking links via Resy.
 * Trip Planner: Add your favorite chef establishments to a persistent itinerary.
@@ -18,21 +19,16 @@ Getting Started
 Prerequisites
 * Node.js (v18+)
 * NPM or Yarn
-Installation
-1. Clone the repository:
 
+## Installation
+1. Clone the repository:
 ```
 git clone [https://github.com/YOUR_USERNAME/culinary-explorer.git](https://github.com/YOUR_USERNAME/culinary-explorer.git)
-
-
 ```
 
 2. Install dependencies:
-
 ```
 npm install
-
-
 ```
 
 3. Set up your environment variables:
@@ -40,16 +36,11 @@ Create a .env file in the root directory and add your Firebase configuration:
 
 ```
 VITE_FIREBASE_CONFIG={"apiKey":"...","authDomain":"..."}
-
-
 ```
 
 4. Start the development server:
-
 ```
 npm run dev
-
-
 ```
 
 Folder Structure
