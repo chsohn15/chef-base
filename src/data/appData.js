@@ -4,7 +4,7 @@ export const APP_DATA = {
       id: "ccw",
       title: "Culinary Class Wars",
       platform: "Netflix",
-      banner: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=1200&q=80",
+      banner: "https://koreajoongangdaily.joins.com/data/photo/2025/11/18/89cc0272-6e4c-4167-8bca-2584f957535c.jpg",
       description: "100 chefs enter. 80 'Black Spoons' challenge 20 'White Spoons' for culinary supremacy.",
       seasons: [
         { number: 1, name: "The Beginning", chefs: ["napoli-matfia", "edward-lee", "triple-star", "queen-of-dim-sum"] },
@@ -42,7 +42,7 @@ export const APP_DATA = {
       id: "iron-chef",
       title: "Iron Chef: Quest for a Legend",
       platform: "Netflix",
-      banner: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1200&q=80",
+      banner: "https://static0.colliderimages.com/wordpress/wp-content/uploads/2022/05/iron-chef-quest-for-iron-legend-featured.jpg?q=50&fit=crop&w=1232&h=693&dpr=1.5",
       description: "The gold standard of culinary competitions reimagined.",
       seasons: [
         { number: 1, name: "Iron Legends", chefs: ["curtis-stone", "edward-lee"] }
@@ -52,7 +52,7 @@ export const APP_DATA = {
       id: "top-chef",
       title: "Top Chef",
       platform: "Bravo",
-      banner: "https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=1200&q=80",
+      banner: "https://www.foodandwine.com/thmb/VC_L5nv4s-ypy2jdzFxfTBPn6FY=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Top-Chef-Contestants-Season-23-FT-DGTL0126-Judges-Group-b629e5dcc03c4be2ade23473419a0bdc.jpg",
       description: "America's longest-running culinary competition. 15 chefs compete for the biggest prize in the show's history — $250,000 and a $125,000 flight credit.",
       seasons: [
         {
@@ -95,7 +95,7 @@ export const APP_DATA = {
       class: "White Spoon",
       rank: "Runner-up",
       bio: "Iron Chef winner and James Beard nominee. Fuses Korean roots with Southern US soul.",
-      image: "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=400&h=400&fit=crop",
+      image: "https://gardenandgun.com/wp-content/uploads/2024/04/AUTHOR-PHOTO.-Edward-Lee-800x1200.jpg",
       restaurants: [
         {
           id: "e1",
@@ -667,7 +667,7 @@ export const APP_DATA = {
       class: "Black Spoon",
       rank: "Competing",
       bio: "CIA grad; six years at NYC's three-star Per Se, then chef de cuisine at Monsieur Benjamin Seoul and former sous chef at judge Ahn Sung-jae's Mosu. Impressive fine-dining resume as an underdog.",
-      image: "https://images.unsplash.com/photo-1544168190-79c17527004f?w=400&h=400&fit=crop",
+      image: "https://i.namu.wiki/i/_T8ZzFKoBOCQAuWBpHcqFlKzjUwmwwgQiJgvvvWUcE_mvAYJQ91-A7NFPZlVTUODLcw84URxD99ht7M2eeicmmDBFQF_g1HQZcJRWMRnmeI6gnPY9uqfKHTf8nVZD5J7uZ9Zdm-BryZhFR9mZPrzvw.webp",
       restaurants: [{
         id: "tsk1",
         name: "Monsieur Benjamin Seoul",
@@ -687,7 +687,7 @@ export const APP_DATA = {
       class: "Black Spoon",
       rank: "Competing",
       bio: "Chef at one-star Solbam (Korean contemporary fine dining). Long-time mentee of White Spoon chef Kim Hee-eun. Standout Black Spoon with a direct connection to a White Spoon mentor.",
-      image: "https://images.unsplash.com/photo-1512485800893-b08ec1ea59b1?w=400&h=400&fit=crop",
+      image: "https://koreajoongangdaily.joins.com/data/photo/2026/01/13/af2789a6-bea3-4e7a-b708-4727f21b30cb.jpg",
       restaurants: [{
         id: "lt1",
         name: "Solbam",
