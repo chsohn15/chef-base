@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo } from 'react';
 
 import { APP_DATA } from './data/appData';
 import Header from './components/Header';
@@ -8,16 +8,6 @@ import HomeView from './components/HomeView';
 import ShowView from './components/ShowView';
 import ProfileView from './components/ProfileView';
 
-// Firebase Imports
-import { initializeApp } from 'firebase/app';
-import { getAuth, onAuthStateChanged, signInAnonymously, signInWithCustomToken } from 'firebase/auth';
-import { getFirestore } from 'firebase/firestore';
-
-// Configuration from environment
-const firebaseConfig = JSON.parse(import.meta.env.VITE_FIREBASE_CONFIG || "{}");
-const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
-const db = getFirestore(app);
 
 export default function App() {
   const [view, setView] = useState("home"); 
@@ -29,23 +19,6 @@ export default function App() {
   const [itinerary, setItinerary] = useState([]);
   const [showItinerary, setShowItinerary] = useState(false);
   const [hideSpoilers, setHideSpoilers] = useState(true);
-  const [user, setUser] = useState(null);
-
-  useEffect(() => {
-    const initAuth = async () => {
-      try {
-        if (typeof __initial_auth_token !== 'undefined' && __initial_auth_token) {
-          await signInWithCustomToken(auth, __initial_auth_token);
-        } else {
-          await signInAnonymously(auth);
-        }
-      } catch (err) { console.error(err); }
-    };
-    initAuth();
-    const unsubscribe = onAuthStateChanged(auth, setUser);
-    return () => unsubscribe();
-  }, []);
-
   const toggleItinerary = (res, chef) => {
     const resId = res.id || res.name;
     const exists = itinerary.find(item => item.uid === resId);
