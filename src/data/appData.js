@@ -56,7 +56,7 @@ export const APP_DATA = {
       real_name: "Kwon Sung-jun",
       class: "Black Spoon",
       rank: "Winner",
-      image: "https://images.unsplash.com/photo-1583394838336-acd977730f90?w=400&h=400&fit=crop",
+      image: "https://newsimg.koreatimes.co.kr/2024/10/22/78f56440-67e4-4cc0-bf95-11b7de2d634a.jpg",
       bio: "Master of Italian pasta and intense focus. Famously won the first season of Culinary Class Wars with his emotional 'Grandmother's Pasta' dish.",
       restaurants: [{
         id: "v1",
@@ -111,7 +111,7 @@ export const APP_DATA = {
       class: "Black Spoon",
       rank: "Top 8",
       bio: "Trained under Michelin 3-star icons. Famous for surgical precision and minimalist plating.",
-      image: "https://images.unsplash.com/photo-1595273670150-bd0c3c392e46?w=400&h=400&fit=crop",
+      image: "https://newsimg.koreatimes.co.kr/2024/10/22/49e3a857-0271-4e7e-8a32-162e2f3b64ff.jpg",
       restaurants: [{
         id: "t1",
         name: "Trid",
@@ -131,7 +131,7 @@ export const APP_DATA = {
       class: "White Spoon",
       rank: "Top 8",
       bio: "The first female star chef of Chinese cuisine in Korea. Renowned for her incredible 'Pulled Sugar' technique and deep Dim Sum mastery.",
-      image: "https://images.unsplash.com/photo-1512485800893-b08ec1ea59b1?w=400&h=400&fit=crop",
+      image: "https://newsimg.koreatimes.co.kr/2024/10/22/167d0437-f8ce-439b-b479-e01de876cd88.jpg",
       restaurants: [{
         id: "q1",
         name: "Tian Mi Mi",
