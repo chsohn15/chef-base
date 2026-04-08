@@ -47,6 +47,25 @@ export const APP_DATA = {
       seasons: [
         { number: 1, name: "Iron Legends", chefs: ["curtis-stone", "edward-lee"] }
       ]
+    },
+    {
+      id: "top-chef",
+      title: "Top Chef",
+      platform: "Bravo",
+      banner: "https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=1200&q=80",
+      description: "America's longest-running culinary competition. 15 chefs compete for the biggest prize in the show's history — $250,000 and a $125,000 flight credit.",
+      seasons: [
+        {
+          number: 22,
+          name: "Destination Canada",
+          chefs: [
+            "anya-el-wattar", "paula-endara", "tristen-epps", "corwin-hemming",
+            "katianna-hong", "lana-lagomarsini", "henry-lu", "vincenzo-loseto",
+            "zubair-mohajir", "cesar-murillo", "massimo-piedimonte", "bailey-sullivan",
+            "kat-turner", "shuai-wang", "mimi-weissenborn"
+          ]
+        }
+      ]
     }
   ],
   chefs: [
@@ -680,6 +699,373 @@ export const APP_DATA = {
         resy_url: "https://resy.com/cities/sel/solbam"
       }],
       appearances: [{ showId: "ccw", season: 2, result: "Competing" }]
+    },
+
+    // ——— Top Chef Season 22: Destination Canada ———
+    {
+      id: "anya-el-wattar",
+      real_name: "Anya El-Wattar",
+      class: "Contestant",
+      rank: "Contestant",
+      image: "https://s.yimg.com/ny/api/res/1.2/Dt.zWIY6.f1leuA3V94_.g--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY0MDtjZj13ZWJw/https://media.zenfs.com/en/bravo_278/74290ba58aaec3fd49611e680a579df4",
+      bio: "Born in Moscow, Russia, Anya emigrated to the US at 18. She is a chef at Birch & Rye in San Francisco, bringing a Russian-influenced perspective to her cooking.",
+      restaurants: [{
+        id: "aew1",
+        name: "Birch & Rye",
+        location: "San Francisco, CA",
+        coords: [37.7749, -122.4194],
+        cuisine: "Russian-inspired",
+        specialty: "Russian fine dining",
+        website_url: "https://www.birchandrye.com",
+        resy_url: "https://resy.com/cities/sf/birch-and-rye"
+      }],
+      appearances: [{ showId: "top-chef", season: 22, result: "Contestant" }]
+    },
+    {
+      id: "paula-endara",
+      real_name: "Paula Endara",
+      class: "Contestant",
+      rank: "Contestant",
+      image: "https://s.yimg.com/ny/api/res/1.2/1oEZXUufSFKzwdkSyKxjpg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY0MDtjZj13ZWJw/https://media.zenfs.com/en/bravo_278/4937ae1b5bf627b2ad82545035199379",
+      bio: "Originally from Quito, Ecuador, Paula is the executive chef at Granddam and Lost Palm in Lexington, Kentucky, blending Latin American roots with Southern hospitality.",
+      restaurants: [
+        {
+          id: "pe1",
+          name: "Granddam",
+          location: "Lexington, KY",
+          coords: [38.0406, -84.5037],
+          cuisine: "American",
+          specialty: "Southern-Latin fusion",
+          website_url: "https://www.granddamlexington.com",
+          resy_url: "https://resy.com"
+        },
+        {
+          id: "pe2",
+          name: "Lost Palm",
+          location: "Lexington, KY",
+          coords: [38.0420, -84.5040],
+          cuisine: "American",
+          specialty: "Cocktail-driven dining",
+          website_url: "#",
+          resy_url: "https://resy.com"
+        }
+      ],
+      appearances: [{ showId: "top-chef", season: 22, result: "Contestant" }]
+    },
+    {
+      id: "tristen-epps",
+      real_name: "Tristen Epps",
+      class: "Contestant",
+      rank: "Winner",
+      image: "https://s.yimg.com/ny/api/res/1.2/dXUPHQ1INLtZ8u6YWnYFKA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY0MDtjZj13ZWJw/https://media.zenfs.com/en/bravo_278/639f4cf19b91f88740cd3c9ac4c14ea6",
+      bio: "From Virginia Beach, VA. Former executive chef at Marcus Samuelsson's Red Rooster in Miami. Chef and owner of Epps & Flows Culinary in Houston. Won Season 22 over runners-up Shuai Wang and Bailey Sullivan.",
+      restaurants: [{
+        id: "te1",
+        name: "Epps & Flows Culinary",
+        location: "Houston, TX",
+        coords: [29.7604, -95.3698],
+        cuisine: "American",
+        specialty: "Contemporary American",
+        website_url: "https://www.instagram.com/eppsandflows",
+        resy_url: "https://resy.com"
+      }],
+      appearances: [{ showId: "top-chef", season: 22, result: "Winner" }]
+    },
+    {
+      id: "corwin-hemming",
+      real_name: "Corwin Hemming",
+      class: "Contestant",
+      rank: "Contestant",
+      image: "https://s.yimg.com/ny/api/res/1.2/vvR0Pv5eP5ta8zjN3EV.kw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY0MDtjZj13ZWJw/https://media.zenfs.com/en/bravo_278/13661c14978eebc4bf78975c4cfb7050",
+      bio: "From Augusta, GA, now based in Brooklyn, NY. Private and pop-up chef known for creative, boundary-pushing cuisine.",
+      restaurants: [{
+        id: "ch1",
+        name: "Private & Pop-up",
+        location: "Brooklyn, NY",
+        coords: [40.6782, -73.9442],
+        cuisine: "Contemporary",
+        specialty: "Pop-up dining",
+        website_url: "#",
+        resy_url: "https://resy.com"
+      }],
+      appearances: [{ showId: "top-chef", season: 22, result: "Contestant" }]
+    },
+    {
+      id: "katianna-hong",
+      real_name: "Katianna Hong",
+      class: "Contestant",
+      rank: "Contestant",
+      image: "https://s.yimg.com/ny/api/res/1.2/EfPbLNDzbiITDVPH5EdsIQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY0MDtjZj13ZWJw/https://media.zenfs.com/en/bravo_278/7ffc5c67c2c045460b7b087f6ed0419f",
+      bio: "From Clifton Park, NY, now in Los Angeles. CIA Hyde Park graduate. Chef and owner of Yangban, a celebrated Korean-American restaurant in LA's Arts District.",
+      restaurants: [{
+        id: "kh1",
+        name: "Yangban",
+        location: "Los Angeles, CA",
+        coords: [34.0340, -118.2340],
+        cuisine: "Korean-American",
+        specialty: "Modern Korean-American",
+        website_url: "https://www.yangbansociety.com",
+        resy_url: "https://resy.com/cities/la/yangban"
+      }],
+      appearances: [{ showId: "top-chef", season: 22, result: "Contestant" }]
+    },
+    {
+      id: "lana-lagomarsini",
+      real_name: "Lana Lagomarsini",
+      class: "Contestant",
+      rank: "Contestant",
+      image: "https://s.yimg.com/ny/api/res/1.2/_elqnTg98bMGeSPXaS7y7w--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY0MDtjZj13ZWJw/https://media.zenfs.com/en/bravo_278/301b2ba229f72331bfa88ebc26e64fd5",
+      bio: "From the Bronx, NY, now based in Harlem. CIA graduate and chef-owner of Lana Cooks, bringing Italian-American heritage and personal storytelling to her cuisine.",
+      restaurants: [{
+        id: "ll1",
+        name: "Lana Cooks",
+        location: "Harlem, NY",
+        coords: [40.8116, -73.9465],
+        cuisine: "Italian-American",
+        specialty: "Personal heritage cuisine",
+        website_url: "https://www.instagram.com/lanacooks",
+        resy_url: "https://resy.com"
+      }],
+      appearances: [{ showId: "top-chef", season: 22, result: "Contestant" }]
+    },
+    {
+      id: "henry-lu",
+      real_name: "Henry Lu",
+      class: "Contestant",
+      rank: "Contestant",
+      image: "https://s.yimg.com/ny/api/res/1.2/wBirjRexgAvYFEHBfAoUbg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY0MDtjZj13ZWJw/https://media.zenfs.com/en/bravo_278/7992716160a4072b623d4fdc0962fee2",
+      bio: "Born in the Bronx, NY, now in Houston, TX. Chef and owner of JŪN and byKIN, exploring modern Asian-American cuisine.",
+      restaurants: [
+        {
+          id: "hl1",
+          name: "JŪN",
+          location: "Houston, TX",
+          coords: [29.7500, -95.3900],
+          cuisine: "Asian-American",
+          specialty: "Modern Asian tasting menu",
+          website_url: "https://www.junhouston.com",
+          resy_url: "https://resy.com/cities/hou/jun"
+        },
+        {
+          id: "hl2",
+          name: "byKIN",
+          location: "Houston, TX",
+          coords: [29.7510, -95.3910],
+          cuisine: "Asian-American",
+          specialty: "Casual Asian-American",
+          website_url: "#",
+          resy_url: "https://resy.com"
+        }
+      ],
+      appearances: [{ showId: "top-chef", season: 22, result: "Contestant" }]
+    },
+    {
+      id: "vincenzo-loseto",
+      real_name: "Vincenzo Loseto",
+      class: "Contestant",
+      rank: "Contestant",
+      image: "https://s.yimg.com/ny/api/res/1.2/Tm_eT3vHkNtKMyfe9Du3fw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY0MDtjZj13ZWJw/https://media.zenfs.com/en/bravo_278/0db14de1d7b7f23ed428584bce4574b6",
+      bio: "From Massapequa, NY, now in Napa, CA. Chef de Cuisine at Press Restaurant, one of the Napa Valley's premier farm-to-table wine country destinations.",
+      restaurants: [{
+        id: "vl1",
+        name: "Press Restaurant",
+        location: "Napa, CA",
+        coords: [38.2975, -122.2869],
+        cuisine: "American",
+        specialty: "Wine country farm-to-table",
+        website_url: "https://www.pressnapavalley.com",
+        resy_url: "https://resy.com/cities/npa/press"
+      }],
+      appearances: [{ showId: "top-chef", season: 22, result: "Contestant" }]
+    },
+    {
+      id: "zubair-mohajir",
+      real_name: "Zubair Mohajir",
+      class: "Contestant",
+      rank: "Contestant",
+      image: "https://s.yimg.com/ny/api/res/1.2/PBSKqo.KeUKcKp0Kshrcvw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY0MDtjZj13ZWJw/https://media.zenfs.com/en/bravo_278/851c5c21586dde11d5a523fe1a1ba064",
+      bio: "Originally from Chennai, India, now in Chicago. Former sous chef at Jean-Georges's Pump Room. Founder and executive chef of Lilac Tiger, Coach House, and Mirra.",
+      restaurants: [
+        {
+          id: "zm1",
+          name: "Lilac Tiger",
+          location: "Chicago, IL",
+          coords: [41.8781, -87.6298],
+          cuisine: "Indian-American",
+          specialty: "Modern Indian",
+          website_url: "https://www.lilactigerchicago.com",
+          resy_url: "https://resy.com/cities/chi/lilac-tiger"
+        },
+        {
+          id: "zm2",
+          name: "Coach House",
+          location: "Chicago, IL",
+          coords: [41.8790, -87.6300],
+          cuisine: "American",
+          specialty: "Contemporary American",
+          website_url: "#",
+          resy_url: "https://resy.com"
+        },
+        {
+          id: "zm3",
+          name: "Mirra",
+          location: "Chicago, IL",
+          coords: [41.8800, -87.6310],
+          cuisine: "Mediterranean",
+          specialty: "Mediterranean sharing plates",
+          website_url: "#",
+          resy_url: "https://resy.com"
+        }
+      ],
+      appearances: [{ showId: "top-chef", season: 22, result: "Contestant" }]
+    },
+    {
+      id: "cesar-murillo",
+      real_name: "César Murillo",
+      class: "Contestant",
+      rank: "Contestant",
+      image: "https://s.yimg.com/ny/api/res/1.2/QxK6cTLmGp9xqF4Liy2bjw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY0MDtjZj13ZWJw/https://media.zenfs.com/en/bravo_278/b5fc5bde7a5dc7aec7aa5b855530a06a",
+      bio: "From Dallas, TX, now in Chicago. Executive chef at North Pond, a beloved Chicago landmark restaurant set inside a former warming shelter in Lincoln Park.",
+      restaurants: [{
+        id: "cm2",
+        name: "North Pond",
+        location: "Chicago, IL",
+        coords: [41.9265, -87.6353],
+        cuisine: "American",
+        specialty: "Seasonal American",
+        website_url: "https://www.northpondrestaurant.com",
+        resy_url: "https://resy.com/cities/chi/north-pond"
+      }],
+      appearances: [{ showId: "top-chef", season: 22, result: "Contestant" }]
+    },
+    {
+      id: "massimo-piedimonte",
+      real_name: "Massimo Piedimonte",
+      class: "Contestant",
+      rank: "Contestant",
+      image: "https://s.yimg.com/ny/api/res/1.2/pvqqmpuPj2Fuop_py8DdEg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY0MDtjZj13ZWJw/https://media.zenfs.com/en/bravo_278/3451cc9326f6902fe5d9e30107234046",
+      bio: "Montréal native and chef-owner of Cabaret l'Enfer. Trained under Daniel Boulud at Maison Boulud, he brings theatrical flair and French-Italian technique to his cooking.",
+      restaurants: [{
+        id: "mp1",
+        name: "Cabaret l'Enfer",
+        location: "Montréal, QC",
+        coords: [45.5017, -73.5673],
+        cuisine: "French-Italian",
+        specialty: "Theatrical fine dining",
+        website_url: "https://www.instagram.com/cabaretlenfer",
+        resy_url: "https://resy.com"
+      }],
+      appearances: [{ showId: "top-chef", season: 22, result: "Contestant" }]
+    },
+    {
+      id: "bailey-sullivan",
+      real_name: "Bailey Sullivan",
+      class: "Contestant",
+      rank: "Runner-up",
+      image: "https://s.yimg.com/ny/api/res/1.2/XobNMEctvEwelh7WS2ACPw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY0MDtjZj13ZWJw/https://media.zenfs.com/en/bravo_278/db1b9034e9350f1e2af5147b35f51723",
+      bio: "Chicago native and Chef di Cucina at Monteverde, one of Chicago's most celebrated Italian restaurants. Kendall College graduate; interned at two Michelin-starred restaurants in the city.",
+      restaurants: [{
+        id: "bs1",
+        name: "Monteverde",
+        location: "Chicago, IL",
+        coords: [41.8860, -87.6520],
+        cuisine: "Italian",
+        specialty: "Handmade pasta",
+        website_url: "https://www.monteverdechicago.com",
+        resy_url: "https://resy.com/cities/chi/monteverde"
+      }],
+      appearances: [{ showId: "top-chef", season: 22, result: "Runner-up" }]
+    },
+    {
+      id: "kat-turner",
+      real_name: "Kat Turner",
+      class: "Contestant",
+      rank: "Contestant",
+      image: "https://s.yimg.com/ny/api/res/1.2/li7AGrKgCtON6gMf_mZVfQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY0MDtjZj13ZWJw/https://media.zenfs.com/en/bravo_278/79402f01ff9df73dfd5b3e0127d1da51",
+      bio: "From Sturgeon Bay, WI, now in Los Angeles. Natural Gourmet Institute graduate and executive chef and partner at Highly Likely, a popular LA neighborhood restaurant.",
+      restaurants: [{
+        id: "kt1",
+        name: "Highly Likely",
+        location: "Los Angeles, CA",
+        coords: [34.0900, -118.3200],
+        cuisine: "American",
+        specialty: "Neighborhood all-day dining",
+        website_url: "https://www.highlylikelyca.com",
+        resy_url: "https://resy.com/cities/la/highly-likely"
+      }],
+      appearances: [{ showId: "top-chef", season: 22, result: "Contestant" }]
+    },
+    {
+      id: "shuai-wang",
+      real_name: "Shuai Wang",
+      class: "Contestant",
+      rank: "Runner-up",
+      image: "https://s.yimg.com/ny/api/res/1.2/wu_Un3KGSqPsBAIq_x9qow--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY0MDtjZj13ZWJw/https://media.zenfs.com/en/bravo_278/50bd7d1ec7b34ddee7a83f4e39d20ea0",
+      bio: "From Queens, NY, now in North Charleston, SC. Chef and owner of Jackrabbit Filly and King BBQ, blending Asian flavors with Southern American BBQ traditions.",
+      restaurants: [
+        {
+          id: "sw1",
+          name: "Jackrabbit Filly",
+          location: "North Charleston, SC",
+          coords: [32.8546, -79.9748],
+          cuisine: "Asian-Southern",
+          specialty: "Asian-Southern fusion",
+          website_url: "https://www.jackrabbitfilly.com",
+          resy_url: "https://resy.com"
+        },
+        {
+          id: "sw2",
+          name: "King BBQ",
+          location: "North Charleston, SC",
+          coords: [32.8550, -79.9760],
+          cuisine: "BBQ",
+          specialty: "Asian-inspired BBQ",
+          website_url: "#",
+          resy_url: "https://resy.com"
+        }
+      ],
+      appearances: [{ showId: "top-chef", season: 22, result: "Runner-up" }]
+    },
+    {
+      id: "mimi-weissenborn",
+      real_name: "Mimi Weissenborn",
+      class: "Contestant",
+      rank: "Contestant",
+      image: "https://s.yimg.com/ny/api/res/1.2/utCSmh4f3cs7xUhhpYexhA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY0MDtjZj13ZWJw/https://media.zenfs.com/en/bravo_278/44773968a65f4cbb8a4ccf7b361b5de2",
+      bio: "From Frederick, MD, now in Portland, ME. Executive chef at Sur Lie, Gather, and Catface Cafe, championing local Maine ingredients and community-driven dining.",
+      restaurants: [
+        {
+          id: "mw1",
+          name: "Sur Lie",
+          location: "Portland, ME",
+          coords: [43.6591, -70.2568],
+          cuisine: "American",
+          specialty: "Wine bar & small plates",
+          website_url: "https://www.surlie.com",
+          resy_url: "https://resy.com"
+        },
+        {
+          id: "mw2",
+          name: "Gather",
+          location: "Portland, ME",
+          coords: [43.6600, -70.2570],
+          cuisine: "American",
+          specialty: "Local seasonal",
+          website_url: "#",
+          resy_url: "https://resy.com"
+        },
+        {
+          id: "mw3",
+          name: "Catface Cafe",
+          location: "Portland, ME",
+          coords: [43.6610, -70.2575],
+          cuisine: "Cafe",
+          specialty: "All-day cafe",
+          website_url: "#",
+          resy_url: "https://resy.com"
+        }
+      ],
+      appearances: [{ showId: "top-chef", season: 22, result: "Contestant" }]
     }
   ]
 };
