@@ -38,14 +38,22 @@ export default function ProfileView({
             <img
               src={chef.image}
               alt=""
+              decoding="async"
               className="w-full aspect-square rounded-[40px] object-cover border border-neutral-800 shadow-2xl"
             />
           </div>
 
           <div className="space-y-4 pt-4">
-            <h4 className="text-[10px] font-black text-neutral-500 uppercase tracking-widest px-2 flex items-center gap-2">
-              <Building2 size={12} /> Establishments
-            </h4>
+            <div className="flex items-center justify-between px-2">
+              <h4 className="text-[10px] font-black text-neutral-500 uppercase tracking-widest flex items-center gap-2">
+                <Building2 size={12} /> Establishments
+              </h4>
+              {itinerary.length === 0 && (
+                <span className="text-[9px] font-black text-blue-500/60 uppercase tracking-widest flex items-center gap-1">
+                  <Calendar size={9} /> Add to plan your trip
+                </span>
+              )}
+            </div>
             {chef.restaurants.map((res, idx) => {
               const isInTrip = itinerary.find((i) => i.uid === (res.id || res.name));
               return (
@@ -167,7 +175,7 @@ export default function ProfileView({
                   >
                     <div className="flex items-center gap-6">
                       <div className="w-20 h-20 rounded-3xl overflow-hidden shadow-2xl">
-                        <img src={show?.banner} alt="" className="w-full h-full object-cover" />
+                        <img src={show?.banner} alt="" loading="lazy" decoding="async" className="w-full h-full object-cover" />
                       </div>
                       <div>
                         <p className="font-black text-2xl text-white uppercase tracking-tighter leading-none mb-1">

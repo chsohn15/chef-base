@@ -7,7 +7,7 @@ export const APP_DATA = {
       banner: "https://koreajoongangdaily.joins.com/data/photo/2025/11/18/89cc0272-6e4c-4167-8bca-2584f957535c.jpg",
       description: "100 chefs enter. 80 'Black Spoons' challenge 20 'White Spoons' for culinary supremacy.",
       seasons: [
-        { number: 1, name: "The Beginning", chefs: ["napoli-matfia", "edward-lee", "triple-star", "queen-of-dim-sum"] },
+        { number: 1, name: "The Beginning", chefs: ["napoli-matfia", "edward-lee", "triple-star", "queen-of-dim-sum", "choi-hyun-seok", "jang-ho-joon", "cooking-maniac", "imokase", "hwang-jin-seon", "joseph-lidgerwood"] },
         {
           number: 2,
           name: "The Return",
@@ -36,16 +36,6 @@ export const APP_DATA = {
             "little-tiger"
           ]
         }
-      ]
-    },
-    {
-      id: "iron-chef",
-      title: "Iron Chef: Quest for a Legend",
-      platform: "Netflix",
-      banner: "https://static0.colliderimages.com/wordpress/wp-content/uploads/2022/05/iron-chef-quest-for-iron-legend-featured.jpg?q=50&fit=crop&w=1232&h=693&dpr=1.5",
-      description: "The gold standard of culinary competitions reimagined.",
-      seasons: [
-        { number: 1, name: "Iron Legends", chefs: ["curtis-stone", "edward-lee"] }
       ]
     },
     {
@@ -119,8 +109,7 @@ export const APP_DATA = {
         }
       ],
       appearances: [
-        { showId: "ccw", season: 1, result: "Runner-up" },
-        { showId: "iron-chef", season: 1, result: "Winner" }
+        { showId: "ccw", season: 1, result: "Runner-up" }
       ]
     },
     {
@@ -163,6 +152,148 @@ export const APP_DATA = {
       }],
       appearances: [{ showId: "ccw", season: 1, result: "Top 8" }]
     },
+    // ——— Season 1: Additional Notable Chefs ———
+    {
+      id: "choi-hyun-seok",
+      real_name: "Choi Hyun-seok",
+      class: "White Spoon",
+      rank: "Top 8",
+      image: "https://i.namu.wiki/i/DxY-JXoOgFbhSwj0IRVESQ3y76gpU0F5EPXV3ekWyPlsMw1ZSRqXxd-wZamydizBzp3pIKDqMMoT5hohEZ-KQnHKtv2iF4lQ8R6X65C0ab8livC26FBzAV9MCMSdpc1NgFCn41kDor-cNnyV7Pm1Zg.webp",
+      bio: "One of Korea's most recognizable TV chefs, famous for Please Take Care of My Refrigerator. Known for bringing molecular gastronomy to the mainstream in Korea, with over 30 years of experience. His 'garlic-free pasta' in the Top 8 finale became legendary. Runs CHOI Dot, a Korean-European fusion fine-dining restaurant in Seoul's Cheongdam district.",
+      restaurants: [{
+        id: "chs1",
+        name: "CHOI Dot",
+        location: "Seoul",
+        coords: [37.5265, 127.0400],
+        cuisine: "Korean-European Fusion",
+        specialty: "Molecular-inspired fine dining",
+        website_url: "https://choidot.imweb.me",
+        resy_url: "https://resy.com/cities/sel/choi-dot"
+      }],
+      appearances: [{ showId: "ccw", season: 1, result: "Top 8" }]
+    },
+    {
+      id: "jang-ho-joon",
+      real_name: "Jang Ho-joon",
+      class: "White Spoon",
+      rank: "Top 8",
+      image: "https://i.namu.wiki/i/49yzgXo0afyDEaJukrJa-cm8m4Ia4n9nVlA2ihPuKkpiw6E1pnbwqDVX3Lny4VvwtlqNeqVI0U5z4J32nnX6ljBbsySu4uopJFO8I0pcKACg0WeuV7jpBq8CoF3defIb1l__oNElsNMacQadZ2hxWA.webp",
+      bio: "Japanese cuisine veteran with 18 years of experience at prestigious hotels including the Grand Hyatt, Ritz-Carlton, and Walker Hill. CEO of the Negi F&B group, which operates seven restaurants spanning casual eateries to Japanese fine-dining. Hails from the coastal city of Tongyeong. Returned as a guest judge in Season 2.",
+      restaurants: [
+        {
+          id: "jhj1",
+          name: "Negi Live",
+          location: "Seoul",
+          coords: [37.5300, 127.0350],
+          cuisine: "Japanese fine dining",
+          specialty: "Omakase & seasonal Japanese",
+          website_url: "https://www.instagram.com/negi_dining",
+          resy_url: "https://resy.com"
+        },
+        {
+          id: "jhj2",
+          name: "Negi Silbi",
+          location: "Seoul",
+          coords: [37.5290, 127.0340],
+          cuisine: "Japanese seafood",
+          specialty: "Tongyeong-style coastal dishes",
+          website_url: "https://www.instagram.com/negi_dining",
+          resy_url: "https://resy.com"
+        }
+      ],
+      appearances: [{ showId: "ccw", season: 1, result: "Top 8" }]
+    },
+    {
+      id: "cooking-maniac",
+      moniker: "Cooking Maniac",
+      real_name: "Yoon Nam-no",
+      class: "Black Spoon",
+      rank: "Top 8",
+      image: "https://images.preview.ph/preview/images/2024/11/05/who-is-cooking-maniac-culinary-class-wars-yoon-nam-no-2-1730796271.jpg",
+      bio: "Began cooking in middle school to keep his mother's naengmyeon restaurant afloat after she was diagnosed with cancer. Earned four cooking certificates in middle school, then worked at Shilla Hotel and Bennelong at the Sydney Opera House. MasterChef Korea Season 4 contestant. Specializes in Japanese-style French cuisine; his foul-mouthed passion became a fan favorite moment. Eliminated by Joseph Lidgerwood in Episode 5.",
+      restaurants: [
+        {
+          id: "cm-s1-1",
+          name: "Deepin",
+          location: "Seoul (Sindang)",
+          coords: [37.5638, 127.0140],
+          cuisine: "French-Japanese bistro",
+          specialty: "Scallop tartlets, lamb chops",
+          website_url: "https://www.instagram.com/deepin_sindang",
+          resy_url: "https://resy.com"
+        },
+        {
+          id: "cm-s1-2",
+          name: "Deepin Oksu",
+          location: "Seoul (Oksu)",
+          coords: [37.5483, 127.0155],
+          cuisine: "French-Japanese bistro",
+          specialty: "Fresh pasta & wine-friendly dishes",
+          website_url: "https://www.instagram.com/deepin_oksu",
+          resy_url: "https://resy.com"
+        }
+      ],
+      appearances: [{ showId: "ccw", season: 1, result: "Top 8" }]
+    },
+    {
+      id: "imokase",
+      moniker: "Imokase",
+      real_name: "Kim Mi-ryeong",
+      class: "Black Spoon",
+      rank: "Top 8",
+      image: "https://i.namu.wiki/i/xEV5taYNbIV9lzW4AEHOJcNymvxR40_fYurenmfwwlRtwpf3OJFcGWGWbNKgAU-lbIHXKPRfApya_zLAFegLD36f09tNUnvDa3otOMma0r61t2dYcSruOXCJKXk9W1VKaARJih_G91t55kyQp_IHZg.webp",
+      bio: "Grew up helping her mother sell noodles at Gyeongdong Market after their family fell into hardship. When her mother went blind from diabetes, she took over the stall in her 20s — even returning to work on the day she gave birth. Her moniker blends the Korean word for 'auntie' (imo) with omakase, capturing her personal, market-style hospitality. After the show, her restaurant's revenue tripled to over ₩2 billion.",
+      restaurants: [{
+        id: "imo1",
+        name: "Andongjip Son Kalguksu",
+        location: "Seoul (Gyeongdong Market)",
+        coords: [37.5700, 127.0220],
+        cuisine: "Korean market food",
+        specialty: "Hand-cut noodles & traditional Korean dishes",
+        website_url: "https://www.instagram.com/imokase_official",
+        resy_url: "https://resy.com"
+      }],
+      appearances: [{ showId: "ccw", season: 1, result: "Top 8" }]
+    },
+    {
+      id: "hwang-jin-seon",
+      real_name: "Hwang Jin-seon",
+      class: "White Spoon",
+      rank: "White Spoon",
+      image: "https://i.namu.wiki/i/up290Zat2I_ZqGwvHqyfrM8IA6wI92WOIpNIYw4KJoNTZqMNVqwVg--HuzSjNhBV_hT0p4gm--isdewyIsgqsvRQz3UEK4Q2kKNSdzMg3CBb1xn7Utz9srrrzhcPUuqknlvC-CRxkvgILmqgQzW74w.webp",
+      bio: "Chinese-cuisine chef and YouTuber with over 40 years of experience. Previously helmed Great Shanghai at the Koreanna Hotel. His restaurant Jin Jin held a Michelin 1 Star from 2017–2019 and now holds a Michelin Bib Gourmand. Known for authentic, technique-driven Korean-Chinese cuisine.",
+      restaurants: [{
+        id: "hjs1",
+        name: "Jin Jin",
+        location: "Seoul",
+        coords: [37.5440, 126.9960],
+        cuisine: "Chinese (Korean-style)",
+        specialty: "Michelin Bib Gourmand Chinese",
+        website_url: "https://www.instagram.com/jinjin_chef",
+        resy_url: "https://resy.com/cities/sel/jin-jin"
+      }],
+      appearances: [{ showId: "ccw", season: 1, result: "White Spoon" }]
+    },
+    {
+      id: "joseph-lidgerwood",
+      real_name: "Joseph Lidgerwood",
+      class: "White Spoon",
+      rank: "White Spoon",
+      image: "https://i.namu.wiki/i/Lw4omMgzLTI_EaS6A7sfJxpYq4xhTvpBYpoCB_Nf6DmwwLT0_0eML-NasWfv-DnXshQid-XuJ4A7Z4lkqmaCSfbmXzTJiPBCvsIUKa428MWwRhWuGLhcupilUg8ZCq47LiKHMg9QiWtYCIzDOHt7Pg.webp",
+      bio: "Australian chef from Tasmania. Trained at Michelin-starred restaurants including The French Laundry (US), Noma (Denmark), and The Ledbury (UK). Won the 2021 MICHELIN Blancpain Young Chef Award. Chef-owner of Seoul's 1-star EVETT, where he works exclusively with Korean ingredients. Eliminated in Episode 5 after defeating Cooking Maniac in a conger eel face-off.",
+      restaurants: [{
+        id: "jl1",
+        name: "EVETT",
+        location: "Seoul",
+        coords: [37.5240, 127.0430],
+        cuisine: "Contemporary Korean-influenced",
+        specialty: "Michelin 1-star seasonal tasting",
+        website_url: "https://www.instagram.com/evett_seoul",
+        resy_url: "https://resy.com/cities/sel/evett"
+      }],
+      appearances: [{ showId: "ccw", season: 1, result: "White Spoon" }]
+    },
+
     {
       id: "paik-jong-won",
       moniker: "The Master Judge",
@@ -202,26 +333,6 @@ export const APP_DATA = {
         resy_url: "https://resy.com/cities/sel/mosu"
       }],
       appearances: [{ showId: "ccw", season: 2, result: "Lead Judge" }]
-    },
-    {
-      id: "curtis-stone",
-      moniker: "Iron Chef Stone",
-      real_name: "Curtis Stone",
-      class: "Iron Chef",
-      rank: "Legend",
-      bio: "Australian celebrity chef specializing in seasonal, farm-to-table cuisine. Master of market-driven fine dining.",
-      image: "https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=400&h=400&fit=crop",
-      restaurants: [{
-        id: "cs1",
-        name: "Maude",
-        location: "Beverly Hills, CA",
-        coords: [34.0689, -118.4014],
-        cuisine: "Market Driven",
-        specialty: "Seasonal Tasting Menu",
-        website_url: "https://mauderestaurant.com",
-        resy_url: "https://resy.com/cities/la/maude"
-      }],
-      appearances: [{ showId: "iron-chef", season: 1, result: "Legend" }]
     },
     {
       id: "tbd-white-spoon",
@@ -266,7 +377,10 @@ export const APP_DATA = {
         website_url: "#",
         resy_url: "https://resy.com"
       }],
-      appearances: [{ showId: "ccw", season: 2, result: "Top 7 Finalist" }]
+      appearances: [
+        { showId: "ccw", season: 1, result: "White Spoon" },
+        { showId: "ccw", season: 2, result: "Top 7 Finalist" }
+      ]
     },
     {
       id: "kim-do-yun",
@@ -298,7 +412,10 @@ export const APP_DATA = {
           resy_url: "https://resy.com/cities/sel/myeon-seoul"
         }
       ],
-      appearances: [{ showId: "ccw", season: 2, result: "Top 7 Finalist" }]
+      appearances: [
+        { showId: "ccw", season: 1, result: "White Spoon" },
+        { showId: "ccw", season: 2, result: "Top 7 Finalist" }
+      ]
     },
 
     // ——— Season 2: White Spoons ———

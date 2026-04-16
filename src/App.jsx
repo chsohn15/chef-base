@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useRef } from 'react';
 
 import { APP_DATA } from './data/appData';
 import Header from './components/Header';
@@ -19,19 +19,28 @@ export default function App() {
   const [itinerary, setItinerary] = useState([]);
   const [showItinerary, setShowItinerary] = useState(false);
   const [hideSpoilers, setHideSpoilers] = useState(true);
+  const [toast, setToast] = useState(null);
+  const toastTimer = useRef(null);
+
+  const showToast = (message) => {
+    setToast(message);
+    clearTimeout(toastTimer.current);
+    toastTimer.current = setTimeout(() => setToast(null), 3000);
+  };
+
   const toggleItinerary = (res, chef) => {
     const resId = res.id || res.name;
     const exists = itinerary.find(item => item.uid === resId);
     if (exists) {
       setItinerary(itinerary.filter(item => item.uid !== resId));
     } else {
-      setItinerary([...itinerary, { 
-        ...res, 
-        uid: resId, 
+      setItinerary([...itinerary, {
+        ...res,
+        uid: resId,
         chefName: chef.moniker || chef.real_name,
-        chefId: chef.id 
+        chefId: chef.id
       }]);
-      setShowItinerary(true);
+      showToast(`${res.name} added to your trip`);
     }
   };
 
@@ -63,8 +72,9 @@ export default function App() {
   };
 
   const selectShow = (id) => {
+    const show = APP_DATA.shows.find(s => s.id === id);
     setSelectedShowId(id);
-    setSelectedSeasonNum(1); 
+    setSelectedSeasonNum(show?.seasons[0]?.number ?? 1);
     setView("show");
     window.scrollTo(0, 0);
   };
@@ -92,7 +102,8 @@ export default function App() {
         isOpen={showItinerary}
         onClose={() => setShowItinerary(false)}
         itinerary={itinerary}
-        onRemoveItem={toggleItinerary}
+        onToggleItinerary={toggleItinerary}
+        allChefs={APP_DATA.chefs}
       />
 
       <main className="p-6 md:p-12 max-w-7xl mx-auto">
@@ -128,6 +139,12 @@ export default function App() {
           />
         )}
       </main>
+
+      {toast && (
+        <div className="fixed bottom-28 left-1/2 -translate-x-1/2 z-[160] animate-in slide-in-from-bottom-4 fade-in duration-300 bg-white text-black px-6 py-3 rounded-2xl font-black text-sm shadow-2xl whitespace-nowrap">
+          {toast}
+        </div>
+      )}
 
       <BottomDock
         currentView={view}
