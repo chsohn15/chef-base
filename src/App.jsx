@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useRef, useEffect } from 'react';
 
 import { APP_DATA } from './data/appData';
 import Header from './components/Header';
@@ -10,7 +10,7 @@ import ProfileView from './components/ProfileView';
 
 
 export default function App() {
-  const [view, setView] = useState("home"); 
+  const [view, setView] = useState("home");
   const [selectedShowId, setSelectedShowId] = useState(null);
   const [selectedSeasonNum, setSelectedSeasonNum] = useState(1);
   const [selectedChefId, setSelectedChefId] = useState(null);
@@ -19,32 +19,59 @@ export default function App() {
   const [itinerary, setItinerary] = useState([]);
   const [showItinerary, setShowItinerary] = useState(false);
   const [hideSpoilers, setHideSpoilers] = useState(true);
+  const [toast, setToast] = useState(null);
+  const toastTimer = useRef(null);
+
+  // Seed the initial history entry and listen for back/forward navigation
+  useEffect(() => {
+    history.replaceState({ view: 'home', selectedShowId: null, selectedSeasonNum: 1, selectedChefId: null }, '');
+
+    const onPopState = (e) => {
+      const s = e.state;
+      if (!s) return;
+      setView(s.view);
+      setSelectedShowId(s.selectedShowId ?? null);
+      setSelectedSeasonNum(s.selectedSeasonNum ?? 1);
+      setSelectedChefId(s.selectedChefId ?? null);
+      window.scrollTo(0, 0);
+    };
+
+    window.addEventListener('popstate', onPopState);
+    return () => window.removeEventListener('popstate', onPopState);
+  }, []);
+
+  const showToast = (message) => {
+    setToast(message);
+    clearTimeout(toastTimer.current);
+    toastTimer.current = setTimeout(() => setToast(null), 3000);
+  };
+
   const toggleItinerary = (res, chef) => {
     const resId = res.id || res.name;
     const exists = itinerary.find(item => item.uid === resId);
     if (exists) {
       setItinerary(itinerary.filter(item => item.uid !== resId));
     } else {
-      setItinerary([...itinerary, { 
-        ...res, 
-        uid: resId, 
+      setItinerary([...itinerary, {
+        ...res,
+        uid: resId,
         chefName: chef.moniker || chef.real_name,
-        chefId: chef.id 
+        chefId: chef.id
       }]);
-      setShowItinerary(true);
+      showToast(`${res.name} added to your trip`);
     }
   };
 
   const searchResults = useMemo(() => {
     if (!globalSearchQuery.trim()) return [];
     const q = globalSearchQuery.toLowerCase();
-    return APP_DATA.chefs.filter(c => 
+    return APP_DATA.chefs.filter(c =>
       c.real_name.toLowerCase().includes(q) || (c.moniker && c.moniker.toLowerCase().includes(q))
     ).slice(0, 5);
   }, [globalSearchQuery]);
 
   const currentShow = APP_DATA.shows.find(s => s.id === selectedShowId);
-  
+
   const chefsInShow = useMemo(() => {
     if (!currentShow) return [];
     const season = currentShow.seasons.find(s => s.number === selectedSeasonNum);
@@ -54,26 +81,49 @@ export default function App() {
 
   const currentChef = APP_DATA.chefs.find(c => c.id === selectedChefId);
 
+  const navigateHome = () => {
+    setView("home");
+    history.pushState({ view: 'home', selectedShowId: null, selectedSeasonNum: 1, selectedChefId: null }, '');
+    window.scrollTo(0, 0);
+  };
+
   const navigateToProfile = (id) => {
     setSelectedChefId(id);
     setView("profile");
     setGlobalSearchQuery("");
     setIsGlobalSearchActive(false);
+    history.pushState({ view: 'profile', selectedShowId, selectedSeasonNum, selectedChefId: id }, '');
     window.scrollTo(0, 0);
   };
 
   const selectShow = (id) => {
+    const show = APP_DATA.shows.find(s => s.id === id);
+    const seasonNum = show?.seasons[0]?.number ?? 1;
     setSelectedShowId(id);
-    setSelectedSeasonNum(1); 
+    setSelectedSeasonNum(seasonNum);
     setView("show");
+    history.pushState({ view: 'show', selectedShowId: id, selectedSeasonNum: seasonNum, selectedChefId: null }, '');
+    window.scrollTo(0, 0);
+  };
+
+  const selectSeason = (num) => {
+    setSelectedSeasonNum(num);
+    history.replaceState({ view: 'show', selectedShowId, selectedSeasonNum: num, selectedChefId: null }, '');
+  };
+
+  const navigateToShow = (showId, seasonNum) => {
+    setSelectedShowId(showId);
+    setSelectedSeasonNum(seasonNum);
+    setView("show");
+    history.pushState({ view: 'show', selectedShowId: showId, selectedSeasonNum: seasonNum, selectedChefId: null }, '');
     window.scrollTo(0, 0);
   };
 
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-neutral-100 font-sans pb-32 overflow-x-hidden">
-      
+
       <Header
-        onNavigateHome={() => setView("home")}
+        onNavigateHome={navigateHome}
         globalSearchQuery={globalSearchQuery}
         onSearchChange={(value) => {
           setGlobalSearchQuery(value);
@@ -92,7 +142,9 @@ export default function App() {
         isOpen={showItinerary}
         onClose={() => setShowItinerary(false)}
         itinerary={itinerary}
-        onRemoveItem={toggleItinerary}
+        onToggleItinerary={toggleItinerary}
+        allChefs={APP_DATA.chefs}
+        onSelectChef={(id) => { setShowItinerary(false); navigateToProfile(id); }}
       />
 
       <main className="p-6 md:p-12 max-w-7xl mx-auto">
@@ -104,8 +156,8 @@ export default function App() {
           <ShowView
             show={currentShow}
             selectedSeasonNum={selectedSeasonNum}
-            onSeasonChange={setSelectedSeasonNum}
-            onNavigateHome={() => setView("home")}
+            onSeasonChange={selectSeason}
+            onNavigateHome={navigateHome}
             chefsInShow={chefsInShow}
             onSelectChef={navigateToProfile}
             hideSpoilers={hideSpoilers}
@@ -116,22 +168,24 @@ export default function App() {
           <ProfileView
             chef={currentChef}
             shows={APP_DATA.shows}
-            onBack={() => (selectedShowId ? setView("show") : setView("home"))}
+            onBack={() => history.back()}
             itinerary={itinerary}
             onToggleItinerary={toggleItinerary}
             hideSpoilers={hideSpoilers}
-            onNavigateToShow={(showId, seasonNum) => {
-              setSelectedShowId(showId);
-              setSelectedSeasonNum(seasonNum);
-              setView("show");
-            }}
+            onNavigateToShow={navigateToShow}
           />
         )}
       </main>
 
+      {toast && (
+        <div className="fixed bottom-28 left-1/2 -translate-x-1/2 z-[160] animate-in slide-in-from-bottom-4 fade-in duration-300 bg-white text-black px-6 py-3 rounded-2xl font-black text-sm shadow-2xl whitespace-nowrap">
+          {toast}
+        </div>
+      )}
+
       <BottomDock
         currentView={view}
-        onNavigateHome={() => setView("home")}
+        onNavigateHome={navigateHome}
         onOpenItinerary={() => setShowItinerary(true)}
         itineraryCount={itinerary.length}
       />

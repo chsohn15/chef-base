@@ -15,6 +15,7 @@ export default function HomeView({ shows, onSelectShow }) {
             <img
               src={show.banner}
               alt=""
+              decoding="async"
               className="w-full h-full object-cover brightness-50 group-hover:scale-105 transition-transform duration-1000"
             />
             <div className="absolute inset-0 p-8 flex flex-col justify-end bg-gradient-to-t from-neutral-950">
