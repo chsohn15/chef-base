@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react';
 import { X, ExternalLink, Trash2, Search, Plus, Check } from 'lucide-react';
 
-export default function TripPlannerSidebar({ isOpen, onClose, itinerary, onToggleItinerary, allChefs }) {
+export default function TripPlannerSidebar({ isOpen, onClose, itinerary, onToggleItinerary, allChefs, onSelectChef }) {
   const [activeTab, setActiveTab] = useState('trip');
   const [query, setQuery] = useState('');
 
@@ -126,9 +126,12 @@ export default function TripPlannerSidebar({ isOpen, onClose, itinerary, onToggl
                     >
                       <div className="min-w-0">
                         <p className="font-black text-xs uppercase leading-none truncate">{res.name}</p>
-                        <p className="text-[10px] text-neutral-500 font-bold uppercase mt-1 truncate">
+                        <button
+                          onClick={() => { onSelectChef(chef.id); onClose(); }}
+                          className="text-[10px] text-neutral-500 hover:text-blue-400 font-bold uppercase mt-1 truncate transition-colors text-left"
+                        >
                           {chef.moniker || chef.real_name} · {res.location}
-                        </p>
+                        </button>
                       </div>
                       <button
                         onClick={() => onToggleItinerary(res, chef)}

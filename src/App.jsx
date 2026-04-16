@@ -104,6 +104,7 @@ export default function App() {
         itinerary={itinerary}
         onToggleItinerary={toggleItinerary}
         allChefs={APP_DATA.chefs}
+        onSelectChef={navigateToProfile}
       />
 
       <main className="p-6 md:p-12 max-w-7xl mx-auto">
