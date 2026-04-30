@@ -177,7 +177,7 @@ export const APP_DATA = {
       real_name: "Jang Ho-joon",
       class: "White Spoon",
       rank: "Top 8",
-      image: "https://i.namu.wiki/i/49yzgXo0afyDEaJukrJa-cm8m4Ia4n9nVlA2ihPuKkpiw6E1pnbwqDVX3Lny4VvwtlqNeqVI0U5z4J32nnX6ljBbsySu4uopJFO8I0pcKACg0WeuV7jpBq8CoF3defIb1l__oNElsNMacQadZ2hxWA.webp",
+      image: "https://i.namu.wiki/i/TX5TZphphUKbrW7fbxUXX1kGERZ3XaLq9xdE3dPNL-toLvRe5Q73BzTh0lGVthnYIn1wUfO4U34HMr3gS0hDVH5oULcQdxPgxueSuJ-MPBEptL4-SOonKoyFwVzdMULkr9USjGxL5P-ns1bpwWER6w.webp",
       bio: "Japanese cuisine veteran with 18 years of experience at prestigious hotels including the Grand Hyatt, Ritz-Carlton, and Walker Hill. CEO of the Negi F&B group, which operates seven restaurants spanning casual eateries to Japanese fine-dining. Hails from the coastal city of Tongyeong. Returned as a guest judge in Season 2.",
       restaurants: [
         {
@@ -241,7 +241,7 @@ export const APP_DATA = {
       real_name: "Kim Mi-ryeong",
       class: "Black Spoon",
       rank: "Top 8",
-      image: "https://i.namu.wiki/i/xEV5taYNbIV9lzW4AEHOJcNymvxR40_fYurenmfwwlRtwpf3OJFcGWGWbNKgAU-lbIHXKPRfApya_zLAFegLD36f09tNUnvDa3otOMma0r61t2dYcSruOXCJKXk9W1VKaARJih_G91t55kyQp_IHZg.webp",
+      image: "https://i.namu.wiki/i/9xYMniFXp50cuEGnof94U_10fKvnVEWWkcybmRkmRMMoUImq7g-vnLJk_az1NrypHRhkfyl6DyoYVG-TChYzo_ESV8MoYGCn4QgUYqRQrWgjfDieTu7EvGNXCrzV4_vIrhSKB_p_emDa_DrbykmbOg.webp",
       bio: "Grew up helping her mother sell noodles at Gyeongdong Market after their family fell into hardship. When her mother went blind from diabetes, she took over the stall in her 20s — even returning to work on the day she gave birth. Her moniker blends the Korean word for 'auntie' (imo) with omakase, capturing her personal, market-style hospitality. After the show, her restaurant's revenue tripled to over ₩2 billion.",
       restaurants: [{
         id: "imo1",
@@ -260,7 +260,7 @@ export const APP_DATA = {
       real_name: "Hwang Jin-seon",
       class: "White Spoon",
       rank: "White Spoon",
-      image: "https://i.namu.wiki/i/up290Zat2I_ZqGwvHqyfrM8IA6wI92WOIpNIYw4KJoNTZqMNVqwVg--HuzSjNhBV_hT0p4gm--isdewyIsgqsvRQz3UEK4Q2kKNSdzMg3CBb1xn7Utz9srrrzhcPUuqknlvC-CRxkvgILmqgQzW74w.webp",
+      image: "https://i.namu.wiki/i/fk6E4navZfqwFfsG1bd3zd5P0YzqK3WQcwBBtj8n-xLmFpX8I0gyI-8nfsFwDwUuDp4DQCLi2ebu8UD3tR4iSpkSdsIHmb4kALpNT8m57Bn68EhY_yLQuZw2Z2D0sIenPW1Q6z67IBU0JvhPxpxa_g.webp",
       bio: "Chinese-cuisine chef and YouTuber with over 40 years of experience. Previously helmed Great Shanghai at the Koreanna Hotel. His restaurant Jin Jin held a Michelin 1 Star from 2017–2019 and now holds a Michelin Bib Gourmand. Known for authentic, technique-driven Korean-Chinese cuisine.",
       restaurants: [{
         id: "hjs1",
@@ -279,7 +279,7 @@ export const APP_DATA = {
       real_name: "Joseph Lidgerwood",
       class: "White Spoon",
       rank: "White Spoon",
-      image: "https://i.namu.wiki/i/Lw4omMgzLTI_EaS6A7sfJxpYq4xhTvpBYpoCB_Nf6DmwwLT0_0eML-NasWfv-DnXshQid-XuJ4A7Z4lkqmaCSfbmXzTJiPBCvsIUKa428MWwRhWuGLhcupilUg8ZCq47LiKHMg9QiWtYCIzDOHt7Pg.webp",
+      image: "https://i.namu.wiki/i/JJ34PDrZIU_paiG2BwVSrU-1qFGtlx6OO4ZBV1wS1VFZk5OiTd4tHErulvca9yGofAvaqQcv5ats2xARuL67e-qRW6gtS0HJxoZyoYTv9sQgtc-GPWVdspGHsbzbM4lZmfDB9MFmKVm7oloS-7TVPQ.webp",
       bio: "Australian chef from Tasmania. Trained at Michelin-starred restaurants including The French Laundry (US), Noma (Denmark), and The Ledbury (UK). Won the 2021 MICHELIN Blancpain Young Chef Award. Chef-owner of Seoul's 1-star EVETT, where he works exclusively with Korean ingredients. Eliminated in Episode 5 after defeating Cooking Maniac in a conger eel face-off.",
       restaurants: [{
         id: "jl1",
@@ -784,7 +784,7 @@ export const APP_DATA = {
       class: "Black Spoon",
       rank: "Competing",
       bio: "CIA grad; six years at NYC's three-star Per Se, then chef de cuisine at Monsieur Benjamin Seoul and former sous chef at judge Ahn Sung-jae's Mosu. Impressive fine-dining resume as an underdog.",
-      image: "https://i.namu.wiki/i/_T8ZzFKoBOCQAuWBpHcqFlKzjUwmwwgQiJgvvvWUcE_mvAYJQ91-A7NFPZlVTUODLcw84URxD99ht7M2eeicmmDBFQF_g1HQZcJRWMRnmeI6gnPY9uqfKHTf8nVZD5J7uZ9Zdm-BryZhFR9mZPrzvw.webp",
+      image: "https://i.namu.wiki/i/9E0qPCNndhSLypSwWsoFFYFBSj2kS4hBD3DK2JQLl93mkaXZzitpC9Sx0-_DqX-e05fdH4FXTgTjsd-NSdG4Ni7Jf2l0WfwbauPSzYtvnSVY_UkQACTWT9PnDrZ-_ePqG-sTua7JiaF8rZbQOYmadA.webp",
       restaurants: [{
         id: "tsk1",
         name: "Monsieur Benjamin Seoul",
