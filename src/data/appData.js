@@ -95,17 +95,17 @@ export const APP_DATA = {
           cuisine: "Modern American",
           specialty: "Aged Duck",
           website_url: "https://610magnolia.com",
-          resy_url: "https://resy.com/cities/lou/610-magnolia"
+          resy_url: "https://www.opentable.com/r/610-magnolia-louisville"
         },
         {
           id: "e2",
-          name: "Nami",
-          location: "Louisville, KY",
-          coords: [38.2527, -85.7585],
-          cuisine: "Modern Korean",
-          specialty: "Korean BBQ",
-          website_url: "https://namilouisville.com",
-          resy_url: "https://resy.com/cities/lou/nami"
+          name: "Succotash Prime",
+          location: "Penn Quarter, Washington DC",
+          coords: [38.8973, -77.0262],
+          cuisine: "Southern",
+          specialty: "Fried Chicken & Waffles",
+          website_url: "https://www.succotashrestaurant.com/",
+          resy_url: "https://www.opentable.com/r/succotash-prime-dc-washington"
         }
       ],
       appearances: [
@@ -147,8 +147,8 @@ export const APP_DATA = {
         coords: [37.5250, 127.0390],
         cuisine: "Chinese",
         specialty: "Dim Sum Platter",
-        website_url: "https://tianmimi.co.kr",
-        resy_url: "https://resy.com/cities/sel/tian-mi-mi"
+        website_url: "https://app.catchtable.co.kr/ct/shop/tianmimihongdae",
+        resy_url: "https://app.catchtable.co.kr/ct/shop/tianmimihongdae"
       }],
       appearances: [{ showId: "ccw", season: 1, result: "Top 8" }]
     },
@@ -168,7 +168,7 @@ export const APP_DATA = {
         cuisine: "Korean-European Fusion",
         specialty: "Molecular-inspired fine dining",
         website_url: "https://choidot.imweb.me",
-        resy_url: "https://resy.com/cities/sel/choi-dot"
+        resy_url: "https://www.catchtable.net/shop/choidot?type=DINING_GLOBAL"
       }],
       appearances: [{ showId: "ccw", season: 1, result: "Top 8" }]
     },
@@ -187,8 +187,8 @@ export const APP_DATA = {
           coords: [37.5300, 127.0350],
           cuisine: "Japanese fine dining",
           specialty: "Omakase & seasonal Japanese",
-          website_url: "https://www.instagram.com/negi_dining",
-          resy_url: "https://resy.com"
+          website_url: "https://www.catchtable.net/shop/negilive",
+          resy_url: "https://www.catchtable.net/shop/negilive"
         },
         {
           id: "jhj2",
@@ -219,8 +219,8 @@ export const APP_DATA = {
           coords: [37.5638, 127.0140],
           cuisine: "French-Japanese bistro",
           specialty: "Scallop tartlets, lamb chops",
-          website_url: "https://www.instagram.com/deepin_sindang",
-          resy_url: "https://resy.com"
+          website_url: "https://www.instagram.com/deepin_seoul",
+          resy_url: "https://www.catchtable.net/shop/deepin"
         },
         {
           id: "cm-s1-2",
@@ -230,7 +230,7 @@ export const APP_DATA = {
           cuisine: "French-Japanese bistro",
           specialty: "Fresh pasta & wine-friendly dishes",
           website_url: "https://www.instagram.com/deepin_oksu",
-          resy_url: "https://resy.com"
+          resy_url: "https://www.catchtable.net/shop/deepin_oksu"
         }
       ],
       appearances: [{ showId: "ccw", season: 1, result: "Top 8" }]
@@ -251,7 +251,7 @@ export const APP_DATA = {
         cuisine: "Korean market food",
         specialty: "Hand-cut noodles & traditional Korean dishes",
         website_url: "https://www.instagram.com/imokase_official",
-        resy_url: "https://resy.com"
+        resy_url: "https://catchtable.net"
       }],
       appearances: [{ showId: "ccw", season: 1, result: "Top 8" }]
     },
@@ -270,7 +270,7 @@ export const APP_DATA = {
         cuisine: "Chinese (Korean-style)",
         specialty: "Michelin Bib Gourmand Chinese",
         website_url: "https://www.instagram.com/jinjin_chef",
-        resy_url: "https://resy.com/cities/sel/jin-jin"
+        resy_url: "https://www.catchtable.net/shop/jinjin"
       }],
       appearances: [{ showId: "ccw", season: 1, result: "White Spoon" }]
     },
@@ -288,8 +288,8 @@ export const APP_DATA = {
         coords: [37.5240, 127.0430],
         cuisine: "Contemporary Korean-influenced",
         specialty: "Michelin 1-star seasonal tasting",
-        website_url: "https://www.instagram.com/evett_seoul",
-        resy_url: "https://resy.com/cities/sel/evett"
+        website_url: "https://www.restaurantevett.com/",
+        resy_url: "https://www.restaurantevett.com/reservation"
       }],
       appearances: [{ showId: "ccw", season: 1, result: "White Spoon" }]
     },
@@ -310,7 +310,7 @@ export const APP_DATA = {
         cuisine: "Korean",
         specialty: "Paik's Coffee",
         website_url: "http://www.theborn.co.kr",
-        resy_url: "https://resy.com"
+        resy_url: "https://catchtable.net"
       }],
       appearances: [{ showId: "ccw", season: 2, result: "Lead Judge" }]
     },
@@ -330,7 +330,7 @@ export const APP_DATA = {
         cuisine: "Modern Innovative",
         specialty: "Small Abalone Tart",
         website_url: "https://mosuseoul.com",
-        resy_url: "https://resy.com/cities/sel/mosu"
+        resy_url: "https://mosuseoul.com/#reservation"
       }],
       appearances: [{ showId: "ccw", season: 2, result: "Lead Judge" }]
     },
@@ -399,7 +399,7 @@ export const APP_DATA = {
           cuisine: "Korean Fine Dining",
           specialty: "Fermentation & aging",
           website_url: "https://guide.michelin.com/us/en/seoul-capital-area/kr-seoul/restaurant/yun",
-          resy_url: "https://resy.com/cities/sel/yun"
+          resy_url: "https://www.catchtable.net/shop/yunseoul"
         },
         {
           id: "kdy2",
@@ -853,8 +853,8 @@ export const APP_DATA = {
           coords: [38.0406, -84.5037],
           cuisine: "American",
           specialty: "Southern-Latin fusion",
-          website_url: "https://www.granddamlexington.com",
-          resy_url: "https://resy.com"
+          website_url: "https://granddamky.com/",
+          resy_url: "https://granddamky.com/#contentModule5"
         },
         {
           id: "pe2",
@@ -883,7 +883,7 @@ export const APP_DATA = {
         coords: [29.7604, -95.3698],
         cuisine: "American",
         specialty: "Contemporary American",
-        website_url: "https://www.instagram.com/eppsandflows",
+        website_url: "https://www.eppsandflows.com/",
         resy_url: "https://resy.com"
       }],
       appearances: [{ showId: "top-chef", season: 22, result: "Winner" }]
@@ -921,8 +921,8 @@ export const APP_DATA = {
         coords: [34.0340, -118.2340],
         cuisine: "Korean-American",
         specialty: "Modern Korean-American",
-        website_url: "https://www.yangbansociety.com",
-        resy_url: "https://resy.com/cities/la/yangban"
+        website_url: "https://yangbanla.com/",
+        resy_url: "https://www.opentable.com/r/yangban-society-featuring-chefs-katianna-and-john-hong-and-presented-by-opentable-los-angeles"
       }],
       appearances: [{ showId: "top-chef", season: 22, result: "Contestant" }]
     },
@@ -960,8 +960,8 @@ export const APP_DATA = {
           coords: [29.7500, -95.3900],
           cuisine: "Asian-American",
           specialty: "Modern Asian tasting menu",
-          website_url: "https://www.junhouston.com",
-          resy_url: "https://resy.com/cities/hou/jun"
+          website_url: "https://www.junbykin.com/",
+          resy_url: "https://www.junbykin.com/"
         },
         {
           id: "hl2",
