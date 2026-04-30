@@ -127,7 +127,7 @@ export default function ProfileView({
                       rel="noopener noreferrer"
                       className="w-full flex items-center justify-center gap-2 py-3 bg-neutral-800 text-white rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-white hover:text-black transition-all group"
                     >
-                      Book on Resy{' '}
+                      Book a Table{' '}
                       <ExternalLink size={12} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                     </a>
                   </div>

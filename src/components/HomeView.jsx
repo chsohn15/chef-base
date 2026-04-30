@@ -10,7 +10,7 @@ export default function HomeView({ shows, onSelectShow }) {
           <div
             key={show.id}
             onClick={() => onSelectShow(show.id)}
-            className="bg-neutral-900 border border-neutral-800 rounded-[40px] overflow-hidden cursor-pointer group hover:border-blue-500 transition-all relative aspect-video"
+            className="bg-neutral-900 border border-neutral-800 rounded-[40px] overflow-hidden cursor-pointer group hover:border-blue-500 transition-all relative aspect-[4/3]"
           >
             <img
               src={show.banner}
