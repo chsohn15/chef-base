@@ -74,8 +74,8 @@ export const APP_DATA = {
         coords: [37.5326, 126.9900],
         cuisine: "Italian",
         specialty: "Chestnut Tiramisu",
-        website_url: "https://viatoledo.kr",
-        resy_url: "https://resy.com/cities/sel/via-toledo"
+        website_url: "https://www.catchtable.net/shop/viatoledo",
+        resy_url: "https://www.catchtable.net/shop/viatoledo"
       }],
       appearances: [{ showId: "ccw", season: 1, result: "Winner" }]
     },
